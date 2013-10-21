@@ -26,3 +26,5 @@ fun get_substitutions1 (subs : string list list, s : string) =
 			      then tail_substitutions
 			      else match @ tail_substitutions
 	end
+
+(* fun get_substitutions2 (subs : string list list, s : string) = *)
