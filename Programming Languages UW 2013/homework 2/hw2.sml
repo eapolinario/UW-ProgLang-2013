@@ -3,7 +3,7 @@ fun same_string(s1 : string, s2 : string) =
 
 fun all_except_option (s : string, sl : string list) =
     case sl of
-	[] => SOME []
+	[] => NONE
      | (x::xs) => case same_string (x, s) of
 		      true => SOME xs
 		   | false => case all_except_option (s, xs) of
